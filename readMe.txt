@@ -41,13 +41,8 @@ To run this,
 
 1. Train the model on the intents. Go to basic_bot and do `python intent_train.py` . This will train the model on the intents mentioned in `data/intent_classes` . Every text file is of one intent. Every file has a collection of statements on which that intent is trained. The filename is the intent label.
 
-2. Run `python intent_predict.py` . Enter any text as a command line argument. If the text entered is relevant to any of the intents on which it is trained, it will reply with the answer to that intent.  
------------------------------
-Looking at the intent detection code
-
-The intent detection code is located in basic_bot. This can detect intents and works on the terminal. To try this out go to src/FinanceBot/basic-bot and do `python intent_predict.py` . You can enter a statement in the terminal and it will tell you the intent. 
-
-I have created a new file intent_predict2.py from intent_predict.py . The difference is that intent_predict2.py receives the text from the terminal and then prints the response corresponding to the detected intent. 
+2. Run `python intent_predict2.py` . Enter any text as a command line argument. If the text entered is relevant to any of the intents on which it is trained, it will reply with the answer to that intent.  
+ 
 -------------------------------
 Adding more intents
 
