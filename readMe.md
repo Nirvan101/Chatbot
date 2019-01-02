@@ -46,7 +46,7 @@ To run this,
 
 2. Run ```python intent_predict2.py``` . Enter any text as a command line argument. If the text entered is relevant to any of the intents on which it is trained, it will reply with the answer to that intent.  
  
-##Adding more intents
+## Adding more intents
 
 The intent data is located in ```basic_bot/data/intent_classes```. Each text file is one intent. The name of each file becomes the official intent name. The statements in each file are used to train the model on that intent. So to add a new intent simply create a new text file here. Name it after the intent. Add statements to it on which you want the model to be trained. After adding this file, retrain the model using #1 mentioned above. The chatbot can now detect that intent. But you also need to add a response message for that intent. Go to ```basic_bot/intent_predict2.py```. Add your response string with the other responses. Go to def process_labels() and add an if statement, for your new intent. The chatbot will now return that message when it detects this intent.
 
